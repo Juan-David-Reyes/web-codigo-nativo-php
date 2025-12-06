@@ -1,32 +1,5 @@
-@font-face {
-    font-family: Greycliff;
-    src: url(/assets/fonts/subset-GreycliffCF-Medium.woff2) format("woff2"),
-    url(/assets/fonts/subset-GreycliffCF-Medium.woff) format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: Greycliff;
-    src: url(/assets/fonts/subset-GreycliffCF-Bold.woff2) format("woff2"),
-    url(/assets/fonts/subset-GreycliffCF-Bold.woff) format("woff");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: Greycliff;
-    src: url(/assets/fonts/subset-GreycliffCF-ExtraBold.woff2) format("woff2"),
-    url(/assets/fonts/subset-GreycliffCF-ExtraBold.woff) format("woff");
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap
-}
-
 :root{
-
+    
     /* Colores de fondo */
     --color-bg-primary: #fafafa;
     --color-bg-beige-pearl: #f2f0e9;
@@ -58,7 +31,7 @@
     --color-highlight: #ff6600;
     
     /* Fuentes */
-    --font-title: "Greycliff CF", sans-serif;
+    --font-title: "Inter", sans-serif;
     --font-body: "Inter", sans-serif;
     --font-awesome:"Font Awesome 6 Free";
 

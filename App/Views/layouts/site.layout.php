@@ -12,7 +12,7 @@
 
     <!-- Open Graph / Twitter -->
     <meta property="og:title" content="Codigo Nativo">
-    <meta property="og:description" content="Codigo Nativo - Agencia de diseño web profesional para optimizar tu negocio online.">
+    <meta property="og:description" content="Agencia de diseño web profesional para optimizar tu negocio online - Codigo Nativo">
     <meta property="og:image" content="images/og-image.png">
     <meta property="og:url" content="https://www.codigonativo.com">
     <meta name="twitter:card" content="summary_large_image">
@@ -29,7 +29,7 @@
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="<?= URL_PATH ?>Assets/css/normalize.css">
