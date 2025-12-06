@@ -34,9 +34,9 @@
             <section aria-labelledby="legal">
                 <h4 id="legal">Legal</h4>
                 <ul role="menu">
-                    <li role="menuitem"><a href="https://codigonativo.com/politicas-de-privacidad/">Políticas de privacidad</a></li>
-                    <li role="menuitem"><a href="https://codigonativo.com/terminos-y-condiciones/">Términos del servicio</a></li>
-                    <li role="menuitem"><a href="https://codigonativo.com/politica-de-cookies/">Políticas de cookies</a></li>
+                    <li role="menuitem"><a href="<?= URL_PATH ?>politicas-de-privacidad">Políticas de privacidad</a></li>
+                    <li role="menuitem"><a href="<?= URL_PATH ?>terminos-y-condiciones">Términos del servicio</a></li>
+                    <li role="menuitem"><a href="<?= URL_PATH ?>politica-de-cookies">Políticas de cookies</a></li>
                 </ul>
             </section>
         </nav>

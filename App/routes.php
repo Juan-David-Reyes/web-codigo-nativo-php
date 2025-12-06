@@ -6,7 +6,7 @@ return [
         'servicios' => 'Page@servicios',
         'nosotros' => 'Page@nosotros',
         'login' => 'Page@login',
-        'legal' => 'Page@legal',
+        'politicas-de-privacidad' => 'Page@politicas-de-privacidad',
     ],
     'POST' => [
         'login' => 'Page@login',
