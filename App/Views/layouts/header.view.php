@@ -3,7 +3,7 @@
         <div class="menu">
                 <picture>
                 <a href="<?= URL_PATH ?>">
-                    <img loading="lazy" src="<?= URL_PATH ?>Assets/images/dark_logo.svg" width="120" height="38" alt="Código Nativo | Agencia de marketing digital">
+                    <img loading="lazy" src="<?= URL_PATH ?>Assets/images/dark_logo.svg" width="120" height="38" alt="Agencia de marketing digital | Código Nativo">
                 </a>
             </picture>
             <div class="main-nav">
@@ -35,7 +35,7 @@
                     </picture>
                     <div class="serv">
                         <h2>Diseño web <span class="badge destacado">DESTACADO</span></h2>
-                        <p>características avanzadas para Webs superiores.</p>
+                        <p>Sitios web rápidos, seguros y escalables</p>
                     </div>
                 </a>
             </li>
@@ -46,7 +46,7 @@
                     </picture>
                     <div class="serv">
                         <h2>Re-diseño web</h2>
-                        <p>Características avanzadas para Webs superiores.</p>
+                        <p>Webs profesionales que impulsan tu negocio</p>
                     </div>
                 </a>
             </li>
@@ -56,8 +56,8 @@
                         <img width="40" height="40" src="<?= URL_PATH ?>Assets/images/servicios1.png" alt="">
                     </picture>
                     <div class="serv">
-                        <h2>Mantenimiento</h2>
-                        <p>Características avanzadas para Webs superiores.</p>
+                        <h2>Mantenimiento web</h2>
+                        <p>Soporte continuo para tu página web</p>
                     </div>
                 </a>
             </li>
@@ -68,7 +68,7 @@
                     </picture>
                     <div class="serv">
                         <h2>Optimización web</h2>
-                        <p>Características avanzadas para Webs superiores.</p>
+                        <p>Mejora tu velocidad y posicionamiento</p>
                     </div>
                 </a>
             </li>
@@ -79,7 +79,7 @@
                     </picture>
                     <div class="serv">
                         <h2>Auditorías</h2>
-                        <p>Características avanzadas para Webs superiores.</p>
+                        <p>Diagnóstico completo para mejorar tu web</p>
                     </div>
                 </a>
             </li>
@@ -90,7 +90,7 @@
                     </picture>
                     <div class="serv">
                         <h2>Diseño UX/UI <span class="badge nuevo">NUEVO</span></h2>
-                        <p>Productos y servicios intuitivos y funcionales</p>
+                        <p>Experiencias intuitivas que convierten</p>
                     </div>
                 </a>
             </li>
