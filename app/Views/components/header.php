@@ -20,11 +20,11 @@
                     <li role="menuitem"><a href="<?= URL_PATH ?>blog">Blog</a></li>
                     <li role="menuitem"><a href="<?= URL_PATH ?>contacto">Contacto</a></li>
                 </ul>
-                <ul class="cta-menu">
+                <!-- <ul class="cta-menu">
                     <li>
                         <a id="cta-free-consultation" href="/login" target="_blank" rel="noopener noreferrer" class="cta">Ingresar</a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
         <ul class="submenu" role="menu">
@@ -32,7 +32,7 @@
             <li role="menuitem">
                 <a href="<?= URL_PATH ?>servicios/diseno-web">
                     <picture>
-                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="Icono Diseño Web" loading="lazy">
+                        <img width="40" height="40" src="" alt="Icono Diseño Web" loading="lazy">
                     </picture>
                     <div class="serv">
                         <h2>Diseño web <span class="badge destacado">DESTACADO</span></h2>
@@ -43,7 +43,7 @@
             <li role="menuitem">
                 <a href="<?= URL_PATH ?>servicios/rediseno-web">
                     <picture>
-                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="Icono Re-diseño Web" loading="lazy">
+                        <img width="40" height="40" src="" alt="Icono Re-diseño Web" loading="lazy">
                     </picture>
                     <div class="serv">
                         <h2>Re-diseño web</h2>
@@ -54,7 +54,7 @@
             <li role="menuitem">
                 <a href="<?= URL_PATH ?>servicios/mantenimiento-web">
                     <picture>
-                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="Icono Mantenimiento Web" loading="lazy">
+                        <img width="40" height="40" src="" alt="Icono Mantenimiento Web" loading="lazy">
                     </picture>
                     <div class="serv">
                         <h2>Mantenimiento web</h2>
@@ -65,7 +65,7 @@
             <li role="menuitem">
                 <a href="<?= URL_PATH ?>servicios/optimizacion-web">
                     <picture>
-                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="Icono Optimización Web" loading="lazy">
+                        <img width="40" height="40" src="" alt="Icono Optimización Web" loading="lazy">
                     </picture>
                     <div class="serv">
                         <h2>Optimización web</h2>
@@ -76,7 +76,7 @@
             <li role="menuitem">
                 <a href="<?= URL_PATH ?>servicios/auditoria-web">
                     <picture>
-                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="Icono Auditorías Web" loading="lazy">
+                        <img width="40" height="40" src="" alt="Icono Auditorías Web" loading="lazy">
                     </picture>
                     <div class="serv">
                         <h2>Auditorías</h2>
@@ -87,7 +87,7 @@
             <li role="menuitem">
                 <a href="<?= URL_PATH ?>servicios/diseno-ux-ui">
                     <picture>
-                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="Icono Diseño UX/UI" loading="lazy">
+                        <img width="40" height="40" src="" alt="Icono Diseño UX/UI" loading="lazy">
                     </picture>
                     <div class="serv">
                         <h2>Diseño UX/UI <span class="badge nuevo">NUEVO</span></h2>

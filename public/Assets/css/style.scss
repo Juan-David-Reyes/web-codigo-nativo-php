@@ -6,14 +6,92 @@ $headings-font-family-playfair: 'Playfair Display', serif;
 $body-font-family: 'Inter', sans-serif;
 
 // Font sizes & line heights (unitless line-height scales proportionally)
-$font-size-sm: 14px;
-$line-height-sm: 1;        
+// Headings (Playfair Display)
+// Playfair (emocional)
+// H1 – Hero, landing main title (≈ 54–72px)
+$h1-size: clamp(3.375rem, 2.5rem + 2vw, 4.5rem);
+$h1-line-height: 1.08;
+$h1-letter-spacing: -0.02em;
 
-$font-size-default: 16px;
-$line-height-default: 1;
+// H2 – Section title (≈ 42–60px)
+$h2-size: clamp(2.625rem, 2.1rem + 1.6vw, 3.75rem);
+$h2-line-height: 1.1;
+$h2-letter-spacing: -0.02em;
 
-$font-size-lg: 18px;
-$line-height-lg: 1.3;       
+// H3 – Content block title (≈ 32–44px)
+$h3-size: clamp(2rem, 1.7rem + 1.2vw, 2.75rem);
+$h3-line-height: 1.15;
+$h3-letter-spacing: -0.02em;
+
+// H4 – Feature title (≈ 26–34px)
+$h4-size: clamp(1.625rem, 1.4rem + 0.8vw, 2.125rem);
+$h4-line-height: 1.18;
+$h4-letter-spacing: -0.02em;
+
+// H5 – Small section heading (≈ 20–26px)
+$h5-size: clamp(1.25rem, 1.1rem + 0.6vw, 1.625rem);
+$h5-line-height: 1.22;
+$h5-letter-spacing: -0.02em;
+
+// H6 – Eyebrow / overline heading (≈ 16–20px)
+$h6-size: clamp(1rem, 0.95rem + 0.4vw, 1.25rem);
+$h6-line-height: 1.28;
+$h6-letter-spacing: -0.02em;
+
+
+// H1 – Poppins
+$h1-alt-size: $h1-size;
+$h1-alt-line-height: 1.1;
+$h1-alt-letter-spacing: -0.01em;
+
+// H2 – Poppins
+$h2-alt-size: $h2-size;
+$h2-alt-line-height: 1.12;
+$h2-alt-letter-spacing: -0.01em;
+
+// H3 – Poppins
+$h3-alt-size: $h3-size;
+$h3-alt-line-height: 1.15;
+$h3-alt-letter-spacing: -0.01em;
+
+// H4 – Poppins
+$h4-alt-size: $h4-size;
+$h4-alt-line-height: 1.18;
+$h4-alt-letter-spacing: -0.01em;
+
+// H5 – Poppins
+$h5-alt-size: $h5-size;
+$h5-alt-line-height: 1.22;
+$h5-alt-letter-spacing: -0.01em;
+
+// H6 – Poppins
+$h6-alt-size: $h6-size;
+$h6-alt-line-height: 1.25;
+$h6-alt-letter-spacing: -0.01em;
+
+
+
+// BODY – Inter only
+
+// XS – notas, ayudas, metadata
+$body-xs-size: clamp(0.75rem, 0.72rem + 0.2vw, 0.875rem); // 12–14px
+$body-xs-line-height: 1.5;
+$body-xs-letter-spacing: 0%;
+
+// SM – labels, textos secundarios
+$body-sm-size: clamp(0.875rem, 0.82rem + 0.3vw, 1rem); // 14–16px
+$body-sm-line-height: 1.55;
+$body-sm-letter-spacing: 0%;
+
+// MD – párrafo principal
+$body-md-size: clamp(1rem, 0.95rem + 0.35vw, 1.125rem); // 16–18px
+$body-md-line-height: 1.6;
+$body-md-letter-spacing: 0%;
+
+// LG – lectura cómoda, hero paragraph
+$body-lg-size: clamp(1.125rem, 1rem + 0.6vw, 1.375rem); // 18–22px
+$body-lg-line-height: 1.65;
+$body-lg-letter-spacing: 0%;
 
 // Font weights
 $font-weight-regular: 400;
@@ -152,47 +230,55 @@ $surface-action-hover-sec: $neutral-100;
 
 // ========== MIXINS FONTS ==========
 
-// SM
-@mixin font-sm {
-    font-family: $body-font-family;
-    font-size: $font-size-sm;
-    line-height: $line-height-sm;
-    font-weight: $font-weight-regular;
-}
-@mixin font-sm-semibold {
-    font-family: $body-font-family;
-    font-size: $font-size-sm;
-    line-height: $line-height-sm;
-    font-weight: $font-weight-semibold;
+@mixin heading-playfair($size, $line, $track) {
+  font-family: 'Playfair Display', serif;
+  font-size: $size;
+  line-height: $line;
+  letter-spacing: $track;
+  font-weight: 700;
 }
 
-//DEFAULT
-@mixin font-default {
-    font-family: $body-font-family;
-    font-size: $font-size-default;
-    line-height: $line-height-default;
-    font-weight: $font-weight-regular;
-}
-@mixin font-default-semibold {
-    font-family: $body-font-family;
-    font-size: $font-size-default;
-    line-height: $line-height-default;
-    font-weight: $font-weight-semibold;
+@mixin heading-poppins($size, $line, $track) {
+  font-family: 'Poppins', sans-serif;
+  font-size: $size;
+  line-height: $line;
+  letter-spacing: $track;
+  font-weight: 700;
 }
 
-//LG
-@mixin font-lg {
-    font-family: $body-font-family;
-    font-size: $font-size-lg;
-    line-height: $line-height-lg;
-    font-weight: $font-weight-regular;
+@mixin body($size) {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+
+  @if $size == xs {
+    font-size: $body-xs-size;
+    line-height: $body-xs-line-height;
+    letter-spacing: $body-xs-letter-spacing;
+  }
+
+  @else if $size == sm {
+    font-size: $body-sm-size;
+    line-height: $body-sm-line-height;
+    letter-spacing: $body-sm-letter-spacing;
+  }
+
+  @else if $size == md {
+    font-size: $body-md-size;
+    line-height: $body-md-line-height;
+    letter-spacing: $body-md-letter-spacing;
+  }
+
+  @else if $size == lg {
+    font-size: $body-lg-size;
+    line-height: $body-lg-line-height;
+    letter-spacing: $body-lg-letter-spacing;
+  }
+
+  @else {
+    @warn "Body size `#{$size}` not found. Use xs | sm | md | lg.";
+  }
 }
-@mixin font-lg-semibold {
-    font-family: $body-font-family;
-    font-size: $font-size-lg;
-    line-height: $line-height-lg;
-    font-weight: $font-weight-semibold;
-}
+
+// ========== TRANSITIONS ==========
 
 @mixin transition-fast {
   transition: 300ms ease;
@@ -209,104 +295,46 @@ $surface-action-hover-sec: $neutral-100;
 
 // ========== BODY ==========
 
-    body{
-        -webkit-font-smoothing: antialiased;
-    }
-    h1, h2, h3, h4, h5, h6{
-        font-family: $headings-font-family-poppins;
-        font-weight: $font-weight-extra-bold;
-        color: $color-headings;
-        margin: 0;
-        &.dark{
-            color: $color-headings-dark;
-        }
-        &.light{
-            font-weight: $font-weight-regular;
-            font-family: $headings-font-family-playfair;
-        }
-    }
-    h1{
-        font-size: 32px;
-        line-height: 40px;
-    }
-    h2{
-        font-size: 28px;
-        line-height: 36px;
-    }
-    h3{
-        font-size: 22px;
-        line-height: 30px;
-    }
-    h4{
-        font-size: 18px;
-        line-height: 26px; 
-    }
-    h5{
-        font-size: 16px;
-        line-height: 24px;
-    }
-    h6{
-        font-size: 14px;
-        line-height: 20px;
-    }
-    body, input, select, button, textarea{
-        @include font-default();
-        color: $color-body;
-        outline: 0;
-    }
-
-
-html{
-    box-sizing: border-box;
-    font-family: var(--font-body);
-    color: var(--color-text-dark);
-    line-height: 1.5;
-    h1, h2, h3, h4, h5, h6{
-        font-family: var(--font-title);
-        margin: 16px 0;
-        letter-spacing: -.02em;
-    }
-    p, span{
-        font-family: var(--font-body);
-        margin: 0;
-    }
+body{
+    -webkit-font-smoothing: antialiased;
 }
-
-
-
-h1{
-    font-size: 56px;
-    line-height: 100%;
-    font-weight: 800;
-    letter-spacing: -.02em;
-}
-
-h2{
-    font-size: 40px;
-    line-height: 120%;
-    font-weight: 800;
-    letter-spacing: -.02em;
-}
-
-h3{
-    font-size: 32px;
-    line-height: 100%;
-    font-weight: 700;
-    letter-spacing: -.02em;
-}
-
-h4{
-    font-size: 24px;
-    line-height: 100%;
-    font-weight: 700;
-    letter-spacing: -.02em;
-}
-
-p{
-    font-size: 18px;
-    line-height: 140%;
+h1, h2, h3, h4, h5, h6{
+    font-family: $headings-font-family-poppins;
+    font-weight: $font-weight-extra-bold;
+    color: $color-headings;
     margin: 0;
+    &.dark{
+        color: $color-headings-dark;
+    }
+    &.light{
+        font-weight: $font-weight-regular;
+        font-family: $headings-font-family-playfair;
+    }
 }
+h1{
+    @include heading-playfair($h1-size, $h1-line-height, $h1-letter-spacing);
+}
+h2{
+    @include heading-playfair($h2-size, $h2-line-height, $h2-letter-spacing);
+}
+h3{
+    @include heading-poppins($h3-size, $h3-line-height, $h3-letter-spacing);
+}
+h4{
+    @include heading-poppins($h4-size, $h4-line-height, $h4-letter-spacing);
+}
+h5{
+    @include heading-poppins($h5-size, $h5-line-height, $h5-letter-spacing);    
+}
+h6{
+    @include heading-poppins($h6-size, $h6-line-height, $h6-letter-spacing);
+}
+body, input, select, button, textarea, p{
+    @include body(md);
+    color: $color-body;
+    outline: 0;
+}
+
 
 // Navegación
 .main-nav{
