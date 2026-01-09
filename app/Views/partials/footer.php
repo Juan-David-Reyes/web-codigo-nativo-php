@@ -4,7 +4,7 @@
     <div class="cont">
         <div class="footerInfo">
             <picture>
-                <img width="140" height="44" src="<?= URL_PATH ?>Assets/images/light_logo.svg" alt="Código Nativo - Logo">
+                <img width="140" height="44" src="<?= URL_PATH ?>assets/images/light_logo.svg" alt="Código Nativo - Logo">
             </picture>
             <p>
                 <strong>Código Nativo</strong> crea experiencias digitales inolvidables para tus usuarios, con un enfoque en la usabilidad, el diseño intuitivo y la optimización del rendimiento.
@@ -43,7 +43,7 @@
     </div>
     <div class="cont">
         <h6><span>© <?= date('Y') ?> Código Nativo.</span>  Todos los derechos reservados.</h6>
-        <a href="https://www.linkedin.com/company/codigonativo" target="_blank"><span>Linkedin</span> <img src="<?= URL_PATH ?>Assets/images/linkedin.svg" alt="Linkedin"></a>
+        <a href="https://www.linkedin.com/company/codigonativo" target="_blank"><span>Linkedin</span> <img src="<?= URL_PATH ?>assets/images/linkedin.svg" alt="Linkedin"></a>
     </div>
 </footer>
 

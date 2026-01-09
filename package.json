@@ -1,0 +1,25 @@
+{
+  "name": "web-codigo-nativo-php",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass public/assets/css/style.scss public/assets/css/style.min.css --style=compressed",
+    "sass:watch": "sass --watch public/assets/css/style.scss:public/assets/css/style.min.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juan-David-Reyes/web-codigo-nativo-php.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Juan-David-Reyes/web-codigo-nativo-php/issues"
+  },
+  "homepage": "https://github.com/Juan-David-Reyes/web-codigo-nativo-php#readme",
+  "devDependencies": {
+    "sass": "^1.97.2"
+  }
+}

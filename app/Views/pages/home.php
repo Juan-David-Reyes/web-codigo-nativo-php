@@ -13,22 +13,22 @@
 		<h1>A place to develope your @proyect</h1>
 		<div class="proyects">
 			<div class="card">
-				<img src="<?= URL_PATH ?>Assets/images/imagen.jpg" width="500" height="500" alt="">
+				<img src="<?= URL_PATH ?>assets/images/imagen.jpg" width="500" height="500" alt="">
 			</div>
 			<div class="card">
-				<img src="<?= URL_PATH ?>Assets/images/imagen.jpg" width="500" height="500" alt="">
+				<img src="<?= URL_PATH ?>assets/images/imagen.jpg" width="500" height="500" alt="">
 			</div>
 			<div class="card">
-				<img src="<?= URL_PATH ?>Assets/images/imagen.jpg" width="500" height="500" alt="">
+				<img src="<?= URL_PATH ?>assets/images/imagen.jpg" width="500" height="500" alt="">
 			</div>
 			<div class="card">
-				<img src="<?= URL_PATH ?>Assets/images/imagen.jpg" width="500" height="500" alt="">
+				<img src="<?= URL_PATH ?>assets/images/imagen.jpg" width="500" height="500" alt="">
 			</div>
 			<div class="card">
-				<img src="<?= URL_PATH ?>Assets/images/imagen.jpg" width="500" height="500" alt="">
+				<img src="<?= URL_PATH ?>assets/images/imagen.jpg" width="500" height="500" alt="">
 			</div>
 			<div class="card">
-				<img src="<?= URL_PATH ?>Assets/images/imagen.jpg" width="500" height="500" alt="">
+				<img src="<?= URL_PATH ?>assets/images/imagen.jpg" width="500" height="500" alt="">
 			</div>
 		</div>
 
@@ -49,29 +49,29 @@
 <div class="slider">
 	<ul class="move">
 		<!-- // primera vuelta -->
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/advancederma.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/apsap.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/bbmaya.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/ccsolutions.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/danielpsy.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/mielato.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/nacionpodcast.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/paolaakl.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/pazdesdeelvientre.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/seonme.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/advancederma.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/apsap.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/bbmaya.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/ccsolutions.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/danielpsy.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/mielato.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/nacionpodcast.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/paolaakl.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/pazdesdeelvientre.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/seonme.png" alt=""></li>
 
 		<!-- //segunda vuelta -->
 
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/advancederma.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/apsap.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/bbmaya.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/ccsolutions.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/danielpsy.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/mielato.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/nacionpodcast.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/paolaakl.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/pazdesdeelvientre.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>Assets/images/brands/seonme.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/advancederma.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/apsap.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/bbmaya.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/ccsolutions.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/danielpsy.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/mielato.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/nacionpodcast.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/paolaakl.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/pazdesdeelvientre.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/seonme.png" alt=""></li>
 	</ul>
 </div>
 
