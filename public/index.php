@@ -3,8 +3,17 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/../app/bootstrap.php';
+require_once __DIR__ . '/../app/Controllers/BaseController.php';
 require_once __DIR__ . '/../app/Controllers/HomeController.php';
 require_once __DIR__ . '/../app/Controllers/ServiciosController.php';
+require_once __DIR__ . '/../app/Controllers/NosotrosController.php';
+require_once __DIR__ . '/../app/Controllers/ContactoController.php';
+require_once __DIR__ . '/../app/Controllers/DisenoWebController.php';
+require_once __DIR__ . '/../app/Controllers/RedisenoWebController.php';
+require_once __DIR__ . '/../app/Controllers/MantenimientoWebController.php';
+require_once __DIR__ . '/../app/Controllers/OptimizacionWebController.php';
+require_once __DIR__ . '/../app/Controllers/AuditoriaWebController.php';
+require_once __DIR__ . '/../app/Controllers/DisenoUxUiController.php';
 
 $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?? '/';
 
@@ -23,6 +32,38 @@ switch ($path) {
 
     case '/servicios':
         (new ServiciosController())->index();
+        break;
+
+    case '/servicios/diseno-web':
+        (new DisenoWebController())->index();
+        break;
+
+    case '/servicios/rediseno-web':
+        (new RedisenoWebController())->index();
+        break;
+
+    case '/servicios/mantenimiento-web':
+        (new MantenimientoWebController())->index();
+        break;
+
+    case '/servicios/optimizacion-web':
+        (new OptimizacionWebController())->index();
+        break;
+
+    case '/servicios/auditoria-web':
+        (new AuditoriaWebController())->index();
+        break;
+
+    case '/servicios/diseno-ux-ui':
+        (new DisenoUxUiController())->index();
+        break;
+
+    case '/nosotros':
+        (new NosotrosController())->index();
+        break;
+
+    case '/contacto':
+        (new ContactoController())->index();
         break;
 
     default:

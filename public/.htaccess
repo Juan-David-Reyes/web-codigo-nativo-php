@@ -18,6 +18,15 @@ Options +FollowSymLinks
     </IfModule>
 </Files>
 
+# Permitir ejecución de PHP en WordPress (carpeta /blog)
+<IfModule mod_authz_core.c>
+    <Directory ~ "^.*/blog/">
+        <FilesMatch "\.php$">
+            Require all granted
+        </FilesMatch>
+    </Directory>
+</IfModule>
+
 # Reescritura de URLs
 <IfModule mod_rewrite.c>
     RewriteEngine On
@@ -29,6 +38,9 @@ Options +FollowSymLinks
     # Forzar www (o no-www según prefieras)
     # RewriteCond %{HTTP_HOST} !^www\.
     # RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    
+    # Excluir carpeta /blog del router PHP (para WordPress)
+    RewriteCond %{REQUEST_URI} !^/blog/
     
     # Si el archivo o directorio existe, no reescribir
     RewriteCond %{REQUEST_FILENAME} -f [OR]

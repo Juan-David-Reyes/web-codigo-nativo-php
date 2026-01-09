@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <title>Agencia de Marketing Digital | Código Nativo</title>
-    <meta name="description" content="Codigo Nativo - Agencia de diseño web profesional para optimizar tu negocio online. Diseño, desarrollo y mantenimiento web.">
+    <title><?= $pageTitle ?? 'Agencia de Marketing Digital | Código Nativo' ?></title>
+    <meta name="description" content="<?= $pageDescription ?? 'Codigo Nativo - Agencia de diseño web profesional para optimizar tu negocio online. Diseño, desarrollo y mantenimiento web.' ?>">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.codigonativo.com<?= $_SERVER['REQUEST_URI'] ?? '/' ?>">
@@ -14,8 +14,8 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_CO">
     <meta property="og:site_name" content="Código Nativo">
-    <meta property="og:title" content="Agencia de Marketing Digital | Código Nativo">
-    <meta property="og:description" content="Agencia de diseño web profesional para optimizar tu negocio online - Codigo Nativo">
+    <meta property="og:title" content="<?= $pageTitle ?? 'Agencia de Marketing Digital | Código Nativo' ?>">
+    <meta property="og:description" content="<?= $pageDescription ?? 'Agencia de diseño web profesional para optimizar tu negocio online - Codigo Nativo' ?>">
     <meta property="og:image" content="https://www.codigonativo.com/assets/images/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -25,8 +25,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@codigonativo">
     <meta name="twitter:creator" content="@codigonativo">
-    <meta name="twitter:title" content="Agencia de Marketing Digital | Código Nativo">
-    <meta name="twitter:description" content="Agencia de diseño web profesional para optimizar tu negocio online">
+    <meta name="twitter:title" content="<?= $pageTitle ?? 'Agencia de Marketing Digital | Código Nativo' ?>">
+    <meta name="twitter:description" content="<?= $pageDescription ?? 'Agencia de diseño web profesional para optimizar tu negocio online' ?>">
     <meta name="twitter:image" content="https://www.codigonativo.com/assets/images/og-image.png">
 
     <!-- Favicons -->
