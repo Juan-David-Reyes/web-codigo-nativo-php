@@ -1,8 +1,12 @@
 
 <section class="service-hero">
     <div class="container">
-        <h1>Mantenimiento Web</h1>
-        <p class="lead">Mantén tu sitio web seguro, actualizado y funcionando al máximo rendimiento con nuestro servicio de mantenimiento profesional.</p>
+        <h1 class="dark">Mantenimiento web WordPress <span class="light"> para que tu sitio nunca falle</span></h1>
+        <p class="lead">Nos encargamos de la seguridad, velocidad y estabilidad de tu sitio web. Evita caídas, hackeos y pérdida de posicionamiento en Google. Tu web funcionando 24/7 sin que tengas que preocuparte por nada.</p>
+        <div class="cta-container">
+            <a href="<?= URL_PATH ?>contacto" class="secondary-action">Hablar con un especialista</a>
+            <a href="<?= URL_PATH ?>contacto" class="primary-action">Contratar mantenimiento</a>
+        </div>
     </div>
 </section>
 

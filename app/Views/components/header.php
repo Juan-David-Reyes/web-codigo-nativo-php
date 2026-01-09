@@ -14,17 +14,23 @@
                     </li>
                 </ul>
                 <ul class="link-menu" role="menu">
-                    <li role="menuitem"><a href="<?= URL_PATH ?>">Inicio</a></li>
-                    <li role="menuitem"><a href="<?= URL_PATH ?>nosotros">Nosotros</a></li>
-                    <li role="group"><button type="button" aria-haspopup="true" aria-expanded="false" id="servicios">Servicios<i class="arrowService fas fa-chevron-down"></i></button></li>
-                    <li role="menuitem"><a href="<?= URL_PATH ?>blog">Blog</a></li>
-                    <li role="menuitem"><a href="<?= URL_PATH ?>contacto">Contacto</a></li>
-                </ul>
-                <!-- <ul class="cta-menu">
-                    <li>
-                        <a id="cta-free-consultation" href="/login" target="_blank" rel="noopener noreferrer" class="cta">Ingresar</a>
+                    <li role="menuitem">
+                        <a href="<?= URL_PATH ?>">Inicio</a>
                     </li>
-                </ul> -->
+                    <li role="menuitem">
+                        <a href="<?= URL_PATH ?>nosotros">Nosotros</a>
+                    </li>
+                    <li role="group">
+                        <button class="menu" type="button" aria-haspopup="true" aria-expanded="false" id="servicios">
+                            Servicios<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M5.293 9.293a1 1 0 0 1 1.414 0L12 14.586l5.293-5.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6a1 1 0 0 1 0-1.414"/></svg>
+                        </button>
+                    </li>
+                    <li role="menuitem">
+                        <a href="<?= URL_PATH ?>blog">Blog</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="<?= URL_PATH ?>contacto">Contacto</a></li>
+                </ul>
             </div>
         </div>
         <ul class="submenu" role="menu">

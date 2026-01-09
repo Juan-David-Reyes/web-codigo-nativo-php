@@ -45,7 +45,7 @@
 
 <section class="slider-brands">
 
-<h2>Quienes nos han confiado sus proyectos</h2>
+<h2 class="dark">Quienes nos han confiado sus proyectos</h2>
 <div class="slider">
 	<ul class="move">
 		<!-- // primera vuelta -->
