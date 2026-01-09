@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Bloquear archivos sensibles
+Disallow: /app/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: *.scss$
+Disallow: *.map$
+
+# Sitemap
+Sitemap: https://www.codigonativo.com/sitemap.xml
+
+# Crawl-delay (opcional, ajusta según necesidad)
+# Crawl-delay: 1

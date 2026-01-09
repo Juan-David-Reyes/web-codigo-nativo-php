@@ -4,7 +4,7 @@
         <div class="menu">
                 <picture>
                 <a href="<?= URL_PATH ?>">
-                    <img loading="lazy" src="<?= URL_PATH ?>assets/images/dark_logo.svg" width="120" height="38" alt="Agencia de marketing digital | Código Nativo">
+                    <img src="<?= URL_PATH ?>assets/images/brand/dark_logo.svg" width="120" height="38" alt="Código Nativo - Agencia de Marketing Digital" fetchpriority="high">
                 </a>
             </picture>
             <div class="main-nav">
@@ -32,7 +32,7 @@
             <li role="menuitem">
                 <a href="https://codigonativo.com/agencia-de-diseno-web-colombia/">
                     <picture>
-                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="">
+                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="Icono Diseño Web" loading="lazy">
                     </picture>
                     <div class="serv">
                         <h2>Diseño web <span class="badge destacado">DESTACADO</span></h2>
@@ -43,7 +43,7 @@
             <li role="menuitem">
                 <a href="https://codigonativo.com/rediseno-web/">
                     <picture>
-                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="">
+                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="Icono Re-diseño Web" loading="lazy">
                     </picture>
                     <div class="serv">
                         <h2>Re-diseño web</h2>
@@ -54,7 +54,7 @@
             <li role="menuitem">
                 <a href="https://codigonativo.com/mantenimiento-web/">
                     <picture>
-                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="">
+                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="Icono Mantenimiento Web" loading="lazy">
                     </picture>
                     <div class="serv">
                         <h2>Mantenimiento web</h2>
@@ -65,7 +65,7 @@
             <li role="menuitem">
                 <a href="https://codigonativo.com/optimizacion-web/">
                     <picture>
-                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="">
+                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="Icono Optimización Web" loading="lazy">
                     </picture>
                     <div class="serv">
                         <h2>Optimización web</h2>
@@ -76,7 +76,7 @@
             <li role="menuitem">
                 <a href="https://codigonativo.com/agencia-de-auditoria-web/">
                     <picture>
-                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="">
+                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="Icono Auditorías Web" loading="lazy">
                     </picture>
                     <div class="serv">
                         <h2>Auditorías</h2>
@@ -87,7 +87,7 @@
             <li role="menuitem">
                 <a href="https://codigonativo.com/servicios/diseno-ux-ui/">
                     <picture>
-                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="">
+                        <img width="40" height="40" src="<?= URL_PATH ?>assets/images/servicios1.png" alt="Icono Diseño UX/UI" loading="lazy">
                     </picture>
                     <div class="serv">
                         <h2>Diseño UX/UI <span class="badge nuevo">NUEVO</span></h2>

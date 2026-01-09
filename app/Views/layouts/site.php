@@ -6,32 +6,47 @@
 
     <title>Agencia de Marketing Digital | Código Nativo</title>
     <meta name="description" content="Codigo Nativo - Agencia de diseño web profesional para optimizar tu negocio online. Diseño, desarrollo y mantenimiento web.">
-    <meta name="keywords" content="diseño web, desarrollo web, mantenimiento web, SEO, Codigo Nativo">
-
-    <meta property="og:title" content="Codigo Nativo">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.codigonativo.com<?= $_SERVER['REQUEST_URI'] ?? '/' ?>">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="Código Nativo">
+    <meta property="og:title" content="Agencia de Marketing Digital | Código Nativo">
     <meta property="og:description" content="Agencia de diseño web profesional para optimizar tu negocio online - Codigo Nativo">
-    <meta property="og:image" content="images/og-image.png">
+    <meta property="og:image" content="https://www.codigonativo.com/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://www.codigonativo.com">
+    
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@codigonativo">
+    <meta name="twitter:creator" content="@codigonativo">
+    <meta name="twitter:title" content="Agencia de Marketing Digital | Código Nativo">
+    <meta name="twitter:description" content="Agencia de diseño web profesional para optimizar tu negocio online">
+    <meta name="twitter:image" content="https://www.codigonativo.com/assets/images/og-image.png">
 
-    <link rel="manifest" href="/diseno-ux-ui/manifest.json">
-    <meta name="theme-color" content="#0078d4">
-
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= URL_PATH ?>assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="<?= URL_PATH ?>assets/images/favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="<?= URL_PATH ?>assets/images/favicon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= URL_PATH ?>assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= URL_PATH ?>assets/images/favicon/favicon-16x16.png">
-    <link rel="shortcut icon" href="<?= URL_PATH ?>assets/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?= URL_PATH ?>assets/images/favicon/favicon.ico">
 
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="<?= URL_PATH ?>assets/css/style.min.css" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap;&family=PlayfairDisplay:wght@400&display=swap" rel="stylesheet">
-
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap&family=PlayfairDisplay:wght@400&display=swap" as="style">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="<?= URL_PATH ?>assets/css/normalize.css">
     <link rel="stylesheet" href="<?= URL_PATH ?>assets/css/style.min.css">
-
-    <!-- <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    </noscript> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap&family=PlayfairDisplay:wght@400&display=swap" rel="stylesheet">
 
     <script src="<?= URL_PATH ?>assets/js/main.js" defer></script>
 
@@ -48,12 +63,36 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-W6R7NGFS');</script>
+    
+    <!-- Schema.org Organization Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Código Nativo",
+        "url": "https://www.codigonativo.com",
+        "logo": "https://www.codigonativo.com/assets/images/brand/dark_logo.svg",
+        "description": "Agencia de diseño web profesional para optimizar tu negocio online",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CO"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/company/codigonativo"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "availableLanguage": "Spanish"
+        }
+    }
+    </script>
 </head>
 <body>
 
-    <?php require VIEW_PATH . '/partials/header.php'; ?>
+    <?php require VIEW_PATH . '/components/header.php'; ?>
     <?= $content ?>
-    <?php require VIEW_PATH . '/partials/footer.php'; ?>
+    <?php require VIEW_PATH . '/components/footer.php'; ?>
 
 </body>
 </html>

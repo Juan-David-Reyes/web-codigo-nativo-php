@@ -1,5 +1,5 @@
 
-<section class="home-hero gradient-bg">
+<!-- <section class="home-hero gradient-bg">
   
 		<div class="gradients-container">
 			<div class="g1"></div>
@@ -41,7 +41,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <section class="slider-brands">
 
@@ -49,29 +49,29 @@
 <div class="slider">
 	<ul class="move">
 		<!-- // primera vuelta -->
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/advancederma.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/apsap.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/bbmaya.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/ccsolutions.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/danielpsy.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/mielato.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/nacionpodcast.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/paolaakl.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/pazdesdeelvientre.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/seonme.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/advancederma.png" alt="Logo Advanced Derma - Cliente Código Nativo" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/apsap.png" alt="Logo APSAP - Cliente Código Nativo" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/bbmaya.png" alt="Logo BB Maya - Cliente Código Nativo" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/ccsolutions.png" alt="Logo CC Solutions - Cliente Código Nativo" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/danielpsy.png" alt="Logo Daniel Psy - Cliente Código Nativo" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/mielato.png" alt="Logo Mielato - Cliente Código Nativo" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/nacionpodcast.png" alt="Logo Nación Podcast - Cliente Código Nativo" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/paolaakl.png" alt="Logo Paola AKL - Cliente Código Nativo" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/pazdesdeelvientre.png" alt="Logo Paz desde el Vientre - Cliente Código Nativo" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/seonme.png" alt="Logo SeonMe - Cliente Código Nativo" loading="lazy"></li>
 
 		<!-- //segunda vuelta -->
 
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/advancederma.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/apsap.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/bbmaya.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/ccsolutions.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/danielpsy.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/mielato.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/nacionpodcast.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/paolaakl.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/pazdesdeelvientre.png" alt=""></li>
-		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/brands/seonme.png" alt=""></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/advancederma.png" alt="Logo Advanced Derma" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/apsap.png" alt="Logo APSAP" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/bbmaya.png" alt="Logo BB Maya" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/ccsolutions.png" alt="Logo CC Solutions" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/danielpsy.png" alt="Logo Daniel Psy" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/mielato.png" alt="Logo Mielato" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/nacionpodcast.png" alt="Logo Nación Podcast" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/paolaakl.png" alt="Logo Paola AKL" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/pazdesdeelvientre.png" alt="Logo Paz desde el Vientre" loading="lazy"></li>
+		<li class="box"><img width="120" height="60" src="<?= URL_PATH ?>assets/images/marcas/seonme.png" alt="Logo SeonMe" loading="lazy"></li>
 	</ul>
 </div>
 

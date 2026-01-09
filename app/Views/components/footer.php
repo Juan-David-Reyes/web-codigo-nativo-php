@@ -4,7 +4,7 @@
     <div class="cont">
         <div class="footerInfo">
             <picture>
-                <img width="140" height="44" src="<?= URL_PATH ?>assets/images/light_logo.svg" alt="Código Nativo - Logo">
+                <img width="140" height="44" src="<?= URL_PATH ?>assets/images/brand/light_logo.svg" alt="Código Nativo - Logo">
             </picture>
             <p>
                 <strong>Código Nativo</strong> crea experiencias digitales inolvidables para tus usuarios, con un enfoque en la usabilidad, el diseño intuitivo y la optimización del rendimiento.
