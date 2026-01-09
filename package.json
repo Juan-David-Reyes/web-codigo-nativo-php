@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass public/assets/css/style.scss public/assets/css/style.min.css --style=compressed",
-    "sass:watch": "sass --watch public/assets/css/style.scss:public/assets/css/style.min.css --style=compressed"
+    "sass": "sass public/assets/css/style.scss public/assets/css/style.min.css --style=compressed"
   },
   "repository": {
     "type": "git",
