@@ -43,4 +43,21 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    
+    // Marcar el enlace activo según la página actual
+    const currentPath = window.location.pathname;
+    const menuLinks = document.querySelectorAll('.link-menu a');
+    
+    menuLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        
+        // Marcar como activo si coincide exactamente
+        if (linkPath === currentPath) {
+            link.classList.add('active');
+        }
+        // Caso especial: marcar "Servicios" si estamos en cualquier ruta de servicios
+        else if (currentPath.includes('/servicios') && linkPath.includes('/servicios')) {
+            link.classList.add('active');
+        }
+    });
 });

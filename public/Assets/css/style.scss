@@ -478,15 +478,16 @@ section{
     font-weight: $font-weight-semibold;
     box-sizing: border-box;
     color: $color-menu;
+    @include body(xs);
+    svg{
+        @include transition-fast;
+        transform: rotate(0);
+    }
     &:hover{
         color: $color-menu-hover;
         svg{
             fill: $color-menu-hover!important;
         }
-    }
-    svg{
-        @include transition-fast;
-        transform: rotate(0);
     }
     &.active{
         color: $color-menu-active;
@@ -515,7 +516,7 @@ section{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: $space-200 $space-300;
+        padding: $space-100 $space-300;
         box-sizing: border-box;
         position: relative;
     }
@@ -583,7 +584,7 @@ section{
             max-width: 56px;
             max-height: 56px;
             border-radius: 8px;
-            background-color: #464E5B;
+            background-color: $neutral-800;
             padding: 8px;
         }
         
@@ -658,11 +659,13 @@ section{
             font-weight: 500;
             color: $color-menu;
             font-weight: $font-weight-semibold;
-            font-size: $body-sm-size;
-            letter-spacing: -.02em;
+            @include body(xs);
             @include transition-fast;
             &:hover{
                 color: $color-menu-hover;
+            }
+            &.active{
+                color: $color-menu-active;
             }
         }
     }
