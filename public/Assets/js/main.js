@@ -60,4 +60,50 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.add('active');
         }
     });
+    
+    // Efecto de escala y translateY animado para footer
+    const bannerCta = document.querySelector('footer');
+    
+    if (bannerCta) {
+        const animateBannerScale = () => {
+            // Calcular distancia al final del documento
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            
+            // Distancia restante hasta el final del scroll
+            const distanceToBottom = documentHeight - (scrollTop + windowHeight);
+            
+            const triggerDistance = 400; // Comienza a animar cuando quedan 400px
+            
+            if (distanceToBottom <= triggerDistance) {
+                // Calcular progreso: 1 cuando quedan 400px, 0 cuando quedan 0px
+                const progress = Math.max(0, Math.min(1, 1 - (distanceToBottom / triggerDistance)));
+                
+                // TranslateY desde 350px hasta 0px
+                const translateY = 200 - (progress * 200);
+                // Scale desde 0.9 hasta 1
+                const scale = 0.9 + (progress * 0.1);
+                bannerCta.style.transform = `translateY(${translateY}px)`;
+            } else {
+                // Mantener en 350px y scale 0.9 si está lejos del final
+                bannerCta.style.transform = 'translateY(200px)';
+            }
+        };
+        
+        // Ejecutar al cargar la página
+        animateBannerScale();
+        
+        // Ejecutar al hacer scroll con throttle para mejor rendimiento
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    animateBannerScale();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    }
 });

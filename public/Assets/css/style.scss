@@ -14,7 +14,8 @@ $h1-line-height: 1.08;
 $h1-letter-spacing: -0.02em;
 
 // H2 – Section title (≈ 42–60px)
-$h2-size: clamp(2.625rem, 2.1rem + 1.6vw, 3.75rem);
+//$h2-size: clamp(2.625rem, 2.1rem + 1.6vw, 3.75rem);
+$h2-size: clamp(2rem, 1.7rem + 1.2vw, 2.75rem);
 $h2-line-height: 1.1;
 $h2-letter-spacing: -0.02em;
 
@@ -185,7 +186,7 @@ $color-body-dark: $neutral-400;
 
 $color-action: $neutral-800;
 $color-action-hover: $neutral-800;    
-$color-action-sec: $primary-50;
+$color-action-sec: $primary-500;
 $color-action-sec-hover: $primary-50;
 
 $color-menu: $neutral-400;
@@ -320,6 +321,10 @@ h1, h2, h3, h4, h5, h6{
         font-style: italic;
     }
 }
+b, strong {
+    font-weight: 700;
+}
+
 h1{
     @include heading-poppins($h1-size, $h1-line-height, $h1-letter-spacing);
 }
@@ -333,10 +338,12 @@ h4{
     @include heading-poppins($h4-size, $h4-line-height, $h4-letter-spacing);
 }
 h5{
-    @include heading-poppins($h5-size, $h5-line-height, $h5-letter-spacing);    
+    @include heading-poppins($h5-size, $h5-line-height, $h5-letter-spacing);
+    font-weight: $font-weight-bold    
 }
 h6{
     @include heading-poppins($h6-size, $h6-line-height, $h6-letter-spacing);
+    font-weight: $font-weight-bold
 }
 body, input, select, button, textarea, p{
     @include body(md);
@@ -1091,7 +1098,7 @@ section.faqs{
 
 // ========== MANTENIMIENTO WEB ==========
 
-.service-hero{
+.service-mant-hero{
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -1125,6 +1132,58 @@ section.faqs{
 }
 
 
+// ========== BANNER CONTACTO ==========
+
+.banner-cta{
+    background-color: $surface-page-dark;
+    padding: 140px $space-200;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: $space-200;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 375px;
+    z-index: 1;
+    border-radius: 0 0 24px 24px;
+    .container{
+        max-width: 708px;
+        z-index: 2;
+        h2{
+            text-align: center;
+        }
+        p{
+            color: $color-body-dark;
+            text-align: center;
+        }
+        .primary-action{
+            margin: 0 auto;
+            z-index: 2;
+            width: max-content;
+        }
+    }
+    &::before, &::after{
+        content: '';
+        width: 100%;
+        max-width: 350px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -5%;
+        background: url('../images/brand/circle.svg') no-repeat center center / contain;
+        z-index: 1;
+    }
+    &::after{
+        top: initial;
+        bottom: 0;
+        right: -5%;
+        left: initial;
+        transform: rotate(180deg);
+    }
+
+}
+
+
 // ========== FOOTER ==========
 
 footer{
@@ -1132,11 +1191,31 @@ footer{
     background-color: $surface-default;
     padding: 56px 16px 16px;
     box-sizing: border-box;
-    border-radius: 24px 24px 0 0;
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
-
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    transform: translateY(200px) scale(0.9);
+    .certification{
+        display: flex;
+        align-items: center;
+        gap: $space-300;
+        height: 70px;
+        h4{
+            margin: 0;
+        }
+        a{
+            display: inline-flex;
+            margin-right: 24px;
+        }
+        img{
+            max-width: 70px;
+            height: auto;
+            object-fit: contain;
+        }
+    }
     section{
         padding: 0;
         li{
@@ -1145,7 +1224,7 @@ footer{
     }
     .cont{
         width: 100%;
-        max-width: 1140px;
+        max-width: 1440px;
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 48px;
