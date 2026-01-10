@@ -106,4 +106,40 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    
+    // Acordeón FAQ
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        
+        if (question && answer) {
+            question.addEventListener('click', () => {
+                const isOpen = question.getAttribute('aria-expanded') === 'true';
+                
+                // Cerrar todos los demás
+                faqItems.forEach(otherItem => {
+                    const otherQuestion = otherItem.querySelector('.faq-question');
+                    const otherAnswer = otherItem.querySelector('.faq-answer');
+                    if (otherItem !== item) {
+                        otherQuestion.setAttribute('aria-expanded', 'false');
+                        otherAnswer.style.maxHeight = null;
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle el actual
+                if (isOpen) {
+                    question.setAttribute('aria-expanded', 'false');
+                    answer.style.maxHeight = null;
+                    item.classList.remove('active');
+                } else {
+                    question.setAttribute('aria-expanded', 'true');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    item.classList.add('active');
+                }
+            });
+        }
+    });
 });
