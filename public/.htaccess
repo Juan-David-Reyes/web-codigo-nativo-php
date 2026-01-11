@@ -40,7 +40,7 @@ Options +FollowSymLinks
     # RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
     
     # Excluir carpeta /blog del router PHP (para WordPress)
-    RewriteCond %{REQUEST_URI} !^/test/blog/
+    RewriteCond %{REQUEST_URI} !^/blog/
     
     # Si el archivo o directorio existe, no reescribir
     RewriteCond %{REQUEST_FILENAME} -f [OR]

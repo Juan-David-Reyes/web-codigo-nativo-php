@@ -6,7 +6,6 @@
     RewriteRule ^public/ - [L]
     
     # Redirigir todo lo demás a public/ (reescritura interna, no redirect)
-    RewriteCond %{REQUEST_URI} !^/test/public/
     RewriteRule ^(.*)$ public/$1 [L,QSA]
 </IfModule>
 
