@@ -3,10 +3,14 @@
 declare(strict_types=1);
 
 // Base URL path (para que los assets/links funcionen si el proyecto no está en la raíz del dominio).
-$scriptDir = str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? '/'));
+// Usar REQUEST_URI en lugar de SCRIPT_NAME cuando hay reescritura con .htaccess
+$requestUri = $_SERVER['REQUEST_URI'] ?? '/';
+$scriptName = $_SERVER['SCRIPT_NAME'] ?? '/index.php';
 
-// Si estamos en /test/public/, ajustar a /test/
-// Esto maneja el caso donde el .htaccess raíz redirige a /public/
+// Obtener el directorio base desde SCRIPT_NAME
+$scriptDir = str_replace('\\', '/', dirname($scriptName));
+
+// Si estamos en /test/public/ (acceso directo) o /test/ (por .htaccess), normalizar a /test/
 if (str_ends_with($scriptDir, '/public')) {
     $scriptDir = dirname($scriptDir);
 }
