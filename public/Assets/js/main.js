@@ -61,6 +61,40 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
+    // Efecto de entrada para hero section
+    const heroSection = document.querySelector('.service-mant-hero');
+    
+    if (heroSection) {
+        const animateHeroEntrance = () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const heroHeight = heroSection.offsetHeight;
+            const triggerDistance = heroHeight; // Anima durante toda la altura del hero
+            
+            // Calcular progreso: desde que empieza el scroll (0) hasta que termine la altura del hero
+            const progress = Math.max(0, Math.min(1, scrollTop / triggerDistance));
+            
+            // TranslateY desde 0vh hasta -50vh basado en el scroll
+            const translateY = -(progress * 50);
+            
+            heroSection.style.transform = `translateY(${translateY}vh)`;
+        };
+        
+        // Ejecutar al cargar la página
+        animateHeroEntrance();
+        
+        // Ejecutar al hacer scroll
+        let tickingHero = false;
+        window.addEventListener('scroll', () => {
+            if (!tickingHero) {
+                window.requestAnimationFrame(() => {
+                    animateHeroEntrance();
+                    tickingHero = false;
+                });
+                tickingHero = true;
+            }
+        });
+    }
+    
     // Efecto de escala y translateY animado para footer
     const bannerCta = document.querySelector('footer');
     
