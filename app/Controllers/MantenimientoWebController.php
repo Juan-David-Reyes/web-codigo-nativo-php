@@ -8,8 +8,8 @@ final class MantenimientoWebController extends BaseController
     {
         $this->renderWithSeo(
             view: 'pages/servicios/mantenimiento-web',
-            title: 'Mantenimiento Web Profesional | Código Nativo',
-            description: 'Mantén tu sitio web seguro, actualizado y funcionando al máximo rendimiento. Respaldos automáticos, monitoreo 24/7 y soporte técnico.'
+            title: 'Mantenimiento Web WordPress Profesional | Código Nativo',
+            description: 'Servicio profesional de mantenimiento web WordPress. Actualizaciones, seguridad, backups automáticos, monitoreo 24/7 y soporte técnico. Planes desde $70/mes. ¡Protege tu sitio web!'
         );
     }
 }

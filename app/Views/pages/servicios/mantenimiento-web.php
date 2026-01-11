@@ -21,16 +21,16 @@
                 <h2>Nosotros mantenemos tu sitio. <span class="light"> Tú te enfocas en tu negocio.</span></h2>
                 <p>Con nuestro servicio de mantenimiento WordPress tu sitio estará siempre actualizado, seguro y optimizado. Nos encargamos de todo el soporte técnico, actualizaciones y monitoreo continuo, para que no tengas que preocuparte por nada.</p>
                 <ul class="list-badges">
-                    <li><img src="" alt="">Tu sitio funcionando 24/7</li>
-                    <li><img src="" alt="">Seguridad reforzada contra vulnerabilidades</li>
-                    <li><img src="" alt="">Mejor velocidad y rendimiento</li>
-                    <li><img src="" alt="">Copias de seguridad y restauración rápida</li>
-                    <li><img src="" alt="">Soporte técnico cuando lo necesitas</li>
-                    <li><img src="" alt="">Cero preocupaciones técnicas</li>
+                    <li><img src="<?= URL_PATH ?>assets/images/icons/check-circle.svg" width="24" height="24" alt="Sitio web funcionando 24/7" loading="lazy">Tu sitio funcionando 24/7</li>
+                    <li><img src="<?= URL_PATH ?>assets/images/icons/shield.svg" width="24" height="24" alt="Seguridad web reforzada" loading="lazy">Seguridad reforzada contra vulnerabilidades</li>
+                    <li><img src="<?= URL_PATH ?>assets/images/icons/speed.svg" width="24" height="24" alt="Optimización de velocidad web" loading="lazy">Mejor velocidad y rendimiento</li>
+                    <li><img src="<?= URL_PATH ?>assets/images/icons/backup.svg" width="24" height="24" alt="Copias de seguridad automáticas" loading="lazy">Copias de seguridad y restauración rápida</li>
+                    <li><img src="<?= URL_PATH ?>assets/images/icons/support.svg" width="24" height="24" alt="Soporte técnico WordPress" loading="lazy">Soporte técnico cuando lo necesitas</li>
+                    <li><img src="<?= URL_PATH ?>assets/images/icons/peace.svg" width="24" height="24" alt="Tranquilidad en mantenimiento web" loading="lazy">Cero preocupaciones técnicas</li>
                 </ul>
             </div>
             <div class="intro-image">
-                <img src="<?= URL_PATH ?>assets/images/mantenimiento-web.jpg" alt="Servicio de mantenimiento web profesional" width="600" height="400" loading="lazy">
+                <img src="<?= URL_PATH ?>assets/images/servicios/mantenimiento-web-wordpress.jpg" alt="Servicio de mantenimiento web WordPress profesional - actualizaciones, seguridad y backups" width="600" height="400" loading="lazy">
             </div>
         </div>
     </div>
@@ -47,41 +47,41 @@
         </div>
         <div class="features">
             <picture>
-                <img width="600" height="400" src="asd" alt="">
+                <img width="600" height="400" src="<?= URL_PATH ?>assets/images/servicios/features-mantenimiento-web.jpg" alt="Características del servicio de mantenimiento web WordPress" loading="lazy">
             </picture>
             <div class="features-grid">
                 <div class="feature-card">
-                    <img width="64" height="64" src="" alt="">
+                    <img width="64" height="64" src="<?= URL_PATH ?>assets/images/icons/updates.svg" alt="Actualizaciones WordPress" loading="lazy">
                     <h3>Updates</h3>
                     <p>Actualizaciones de WordPress, plugins y temas evita errores y fallos inesperados</p>
                 </div>
                 
                 <div class="feature-card">
-                    <img width="64" height="64" src="" alt="">
+                    <img width="64" height="64" src="<?= URL_PATH ?>assets/images/icons/security.svg" alt="Seguridad WordPress" loading="lazy">
                     <h3>Configuración</h3>
                     <p>Configuración y revisión de seguridad protección contra hackeos y malware</p>
                 </div>
                 
                 <div class="feature-card">
-                    <img width="64" height="64" src="" alt="">
+                    <img width="64" height="64" src="<?= URL_PATH ?>assets/images/icons/backup-cloud.svg" alt="Backups automáticos WordPress" loading="lazy">
                     <h3>Backups</h3>
                     <p>Copias de seguridad automáticas recuperación rápida en caso de fallos</p>
                 </div>
                 
                 <div class="feature-card">
-                    <img width="64" height="64" src="" alt="">
+                    <img width="64" height="64" src="<?= URL_PATH ?>assets/images/icons/speed-optimize.svg" alt="Optimización velocidad web" loading="lazy">
                     <h3>Optimización</h3>
                     <p>Optimización de velocidad y rendimiento mejor experiencia y mejor posicionamiento SEO</p>
                 </div>
                 
                 <div class="feature-card">
-                    <img width="64" height="64" src="" alt="">
+                    <img width="64" height="64" src="<?= URL_PATH ?>assets/images/icons/report.svg" alt="Informes de mantenimiento web" loading="lazy">
                     <h3>Control de cambios</h3>
                     <p>Informe mensual claro y sin tecnicismos sabes qué se hizo y el estado de tu sitio</p>
                 </div>
                 
                 <div class="feature-card">
-                    <img width="64" height="64" src="" alt="">
+                    <img width="64" height="64" src="<?= URL_PATH ?>assets/images/icons/monitoring.svg" alt="Monitoreo 24/7 sitio web" loading="lazy">
                     <h3>Monitoreo 24/7</h3>
                     <p>Monitoreo constante del sitio detección temprana de caídas o problemas</p>
                 </div>
@@ -94,7 +94,7 @@
 <section class="service-mant-negocio">
     <div class="container">
         <picture>
-            <img src="" alt="">
+            <img src="<?= URL_PATH ?>assets/images/servicios/impacto-negocio-mantenimiento-web.jpg" width="500" height="400" alt="Impacto del mantenimiento web en tu negocio" loading="lazy">
         </picture>
         <div class="intro-text">
             <h2>Si tu sitio se cae o se vuelve lento, <span class="light"> tu negocio pierde</span></h2>
@@ -128,7 +128,7 @@
                     <p>Evaluamos seguridad, velocidad, errores y estado general.</p>
                 </div>
                 <div class="feature-card">
-                    <div cass="title-caption">
+                    <div class="title-caption">
                         02.
                     </div>
                     <h3>Configuración de seguridad y backups</h3>
@@ -160,30 +160,29 @@
             <p>Sabemos que muchos clientes pagan mantenimiento sin saber realmente qué se está haciendo. Por eso incluimos un dashboard donde podrás ver el historial de cambios y el estado de tu sitio web en tiempo real.</p>
         </div>
         <picture>
-            <img width="640" height="360" src="" alt="">
+            <img width="640" height="360" src="<?= URL_PATH ?>assets/images/servicios/dashboard-mantenimiento-web.jpg" alt="Dashboard de seguimiento de mantenimiento web WordPress - transparencia total" loading="lazy">
         </picture>
         <div class="hub-features">
             <h2 class="dark">Lo que podrás ver en tu <span class="light">HUB de mantenimiento web</span></h2>
             <ul>
                 <li>
-                    <img width="48" height="48" src="" alt="">Actualizaciones realizadas
+                    <img width="48" height="48" src="<?= URL_PATH ?>assets/images/icons/update-check.svg" alt="Control de actualizaciones WordPress" loading="lazy">Actualizaciones realizadas
                 </li>
 
                 <li>
-                    <img width="48" height="48" src="" alt="">Estado de plugins y temas
+                    <img width="48" height="48" src="<?= URL_PATH ?>assets/images/icons/plugins.svg" alt="Estado plugins y temas WordPress" loading="lazy">Estado de plugins y temas
                 </li>
                 <li>
-                    <img width="48" height="48" src="" alt="">Registro de incidencias y soluciones
+                    <img width="48" height="48" src="<?= URL_PATH ?>assets/images/icons/incident.svg" alt="Registro de incidencias web" loading="lazy">Registro de incidencias y soluciones
                 </li>
                 <li>
-                    <img width="48" height="48" src="" alt="">Copias de seguridad disponibles</
-                    li>
+                    <img width="48" height="48" src="<?= URL_PATH ?>assets/images/icons/backup-list.svg" alt="Historial de backups" loading="lazy">Copias de seguridad disponibles
+                </li>
                 <li>
-                    <img width="48" height="48" src="" alt="">Monitoreo básico de seguridad</
-                    li>
+                    <img width="48" height="48" src="<?= URL_PATH ?>assets/images/icons/security-monitor.svg" alt="Monitoreo de seguridad WordPress" loading="lazy">Monitoreo básico de seguridad
+                </li>
                 <li>
-                    <img width="48" height="48" src="" alt="">Tareas ejecutadas y tiempo de
-                     soporte</li>
+                    <img width="48" height="48" src="<?= URL_PATH ?>assets/images/icons/time-report.svg" alt="Reporte de tiempo de soporte" loading="lazy">Tareas ejecutadas y tiempo de soporte</li>
         </div>
         <div class="planes">
             <h2 class="dark">Nuestros planes de <span class="light">mantenimiento web wordpress</span></h2>
@@ -289,31 +288,34 @@
     </div>
 </section> -->
 
-<section class="faq">
+<section class="faq" itemscope itemtype="https://schema.org/FAQPage">
     <div class="container">
         <h2>Preguntas frecuentes sobre <span class="light">mantenimiento web</span></h2>
         <ul class="faq-list">
-            <li class="faq-item">
+            <li class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <button class="faq-question" type="button" aria-expanded="false">
-                    <h3>¿Todas las páginas web requieren mantenimiento y actualizaciones?</h3>
+                    <h3 itemprop="name">¿Todas las páginas web requieren mantenimiento y actualizaciones?</h3>
                     <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
                 </button>
-                <div class="faq-answer">
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
                     <p>El nivel de mantenimiento que necesita un sitio web depende de la tecnología con la que esté construido. Plataformas más cerradas o estáticas, como algunos creadores de landing pages, requieren menos intervención técnica, aunque también ofrecen menos posibilidades de crecimiento, personalización y posicionamiento orgánico.</p>
                     <p>En cambio, sitios desarrollados en WordPress u otras soluciones flexibles sí necesitan mantenimiento periódico —semanal o mensual— para garantizar su seguridad, estabilidad y rendimiento. Este tipo de plataformas ofrecen mayor potencial para escalar, optimizar el SEO, fortalecer el branding y añadir nuevas funcionalidades a medida que tu negocio evoluciona.</p>
                     <p>En resumen, mientras más profesional y escalable sea tu sitio, más importante es mantenerlo actualizado y en óptimas condiciones para asegurar su crecimiento y desempeño.</p>
+                    </div>
                 </div> 
             </li>
-            <li class="faq-item">
+            <li class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <button class="faq-question" type="button" aria-expanded="false">
-                    <h3>¿Qué ocurre si no le doy mantenimiento a mi sitio web?</h3>
+                    <h3 itemprop="name">¿Qué ocurre si no le doy mantenimiento a mi sitio web?</h3>
                     <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
                 </button>
-                <div class="faq-answer">
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
                     <p>Con el tiempo, un sitio web que no recibe mantenimiento comienza a presentar fallas que afectan su rendimiento y la percepción de tu marca. Actualizaciones pendientes de WordPress, del tema o de los plugins pueden generar errores, vulnerabilidades o incompatibilidades que se reflejan en problemas visibles para tus usuarios.</p>
                     <p>Entre las consecuencias más comunes se encuentran:</p>
                     <ul>
@@ -324,41 +326,48 @@
                     </ul>
                     <p>Estos problemas no solo afectan la navegación, sino también tu posicionamiento en Google y la confianza de tus visitantes. En muchos casos, recuperarse de una caída o de una mala experiencia puede tomar tiempo y requerir intervenciones más avanzadas.</p>
                     <p>El mantenimiento preventivo ayuda a evitar estos escenarios, garantizando estabilidad, seguridad y un desempeño óptimo para tu sitio web.</p>
+                    </div>
                 </div> 
             </li>
-            <li class="faq-item">
+            <li class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <button class="faq-question" type="button" aria-expanded="false">
-                    <h3>¿Cómo puedo saber si mi sitio web está desarrollado en WordPress?</h3>
+                    <h3 itemprop="name">¿Cómo puedo saber si mi sitio web está desarrollado en WordPress?</h3>
                     <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
                 </button>
-                <div class="faq-answer">
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
                     <p>Existen varias formas sencillas de identificar si tu sitio está construido en WordPress. La más común es revisar el código fuente y buscar rutas típicas como /wp-content/ o /wp-admin, que suelen ser propias de esta plataforma. También puedes usar herramientas online como <b>WhatCMS</b> o <b>BuiltWith</b>, que detectan automáticamente el sistema de gestión utilizado.</p>
                     <p>Si no estás segur@, en Código Nativo podemos ayudarte a verificarlo rápidamente y orientarte sobre el tipo de mantenimiento ideal para tu sitio.</p>
+                    </div>
                 </div> 
             </li>
-            <li class="faq-item">
+            <li class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <button class="faq-question" type="button" aria-expanded="false">
-                    <h3>¿Sus planes funcionan únicamente con WordPress?</h3>
+                    <h3 itemprop="name">¿Sus planes funcionan únicamente con WordPress?</h3>
                     <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
                 </button>
-                <div class="faq-answer">
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
                     <p>Nuestros planes de mantenimiento están optimizados para sitios desarrollados en WordPress, ya que esta plataforma requiere actualizaciones frecuentes de núcleo, temas y plugins. Sin embargo, si tu sitio utiliza otro CMS o está desarrollado a medida, también podemos ofrecer soporte. En estos casos, evaluamos la tecnología y el alcance requerido para definir un plan ajustado a tus necesidades específicas.</p>
+                    </div>
                 </div> 
             </li>
-            <li class="faq-item">
+            <li class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <button class="faq-question" type="button" aria-expanded="false">
-                    <h3>¿Ofrecen mantenimiento para sitios que no están en WordPress?</h3>
+                    <h3 itemprop="name">¿Ofrecen mantenimiento para sitios que no están en WordPress?</h3>
                     <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
                 </button>
-                <div class="faq-answer">
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
                     <p>Sí, brindamos soporte para otros CMS o desarrollos a medida. Sin embargo, los costos y tareas pueden variar según la tecnología utilizada.
                     </p>
+                    </div>
                 </div> 
             </li>
         </ul>
