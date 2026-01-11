@@ -1,0 +1,22 @@
+# Redirigir todo el tráfico a la carpeta public
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Si ya estás en /public, no hacer nada
+    RewriteRule ^public/ - [L]
+    
+    # Si el archivo/carpeta no existe, redirigir a /public
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ public/$1 [L]
+    
+    # Si accedes directamente a la raíz, redirigir a /public
+    RewriteRule ^$ public/ [L]
+</IfModule>
+
+# Proteger archivos sensibles
+<FilesMatch "^(composer\.json|composer\.lock|package\.json|\.git.*|README\.md)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+</FilesMatch>
