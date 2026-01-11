@@ -43,25 +43,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="<?= URL_PATH ?>assets/css/normalize.css">
     <link rel="stylesheet" href="<?= URL_PATH ?>assets/css/style.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap&family=PlayfairDisplay:wght@400&display=swap" rel="stylesheet">
+    <!-- Fuentes optimizadas: solo pesos necesarios con display=swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
 
-    <script src="<?= URL_PATH ?>assets/js/main.js" defer></script>
+    <script src="<?= URL_PATH ?>assets/js/main.min.js" defer></script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DDYN9VZKZ"></script>
+    <!-- Google Analytics - async optimizado -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-8DDYN9VZKZ');
     </script>
-
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DDYN9VZKZ"></script>
+    
+    <!-- GTM - async optimizado -->
+    <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-W6R7NGFS');</script>
+    })(window,document,'script','dataLayer','GTM-W6R7NGFS');
+    </script>
     
     <!-- Schema.org Organization Markup -->
     <script type="application/ld+json">

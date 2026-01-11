@@ -12,7 +12,7 @@
             <div class="certification">
                 <h4>Certificados en:</h4>
                 <a href="https://www.credential.net/6e48a1a4-101e-4b2e-a9e9-475150e8f2ec" target="_blank" rel="noopener noreferrer" title="Google Analytics Certification - Verificar credencial">
-                    <img src="https://pdf.ms.credential.net/badge/image?env=production&credential=d4owsyfx" alt="Google Analytics Certification" width="120" height="120" loading="lazy">
+                    <img src="https://pdf.ms.credential.net/badge/image?env=production&credential=d4owsyfx" alt="Google Analytics Certification" width="70" height="70" loading="lazy">
                 </a>
             </div>
 

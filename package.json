@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass public/assets/css/style.scss public/assets/css/style.min.css --style=compressed"
+    "sass": "sass public/assets/css/style.scss public/assets/css/style.min.css --style=compressed --load-path=public/assets/css",
+    "js:minify": "npx terser public/assets/js/main.js -o public/assets/js/main.min.js -c -m",
+    "build": "npm run sass && npm run js:minify",
+    "watch": "sass public/assets/css/style.scss public/assets/css/style.min.css --watch --style=compressed --load-path=public/assets/css"
   },
   "repository": {
     "type": "git",

@@ -1,9 +1,8 @@
 # Node modules
 node_modules/
 
-# Compiled CSS (generated from SCSS)
-public/assets/css/style.scss
+# Source maps (no necesarios en producción)
+*.map
 
 # System files
 .DS_Store
-.md
