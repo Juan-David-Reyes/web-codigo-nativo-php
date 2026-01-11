@@ -31,10 +31,6 @@ Options +FollowSymLinks
 <IfModule mod_rewrite.c>
     RewriteEngine On
     
-    # Establecer la base cuando el proyecto está en un subdirectorio
-    # Descomenta y ajusta según tu estructura
-    RewriteBase /test/
-    
     # Forzar HTTPS (descomenta en producción)
     # RewriteCond %{HTTPS} off
     # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
