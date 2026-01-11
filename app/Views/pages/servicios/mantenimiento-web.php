@@ -1,7 +1,7 @@
 
 <section class="service-mant-hero">
     <div class="container">
-        <h1 class="dark">Mantenimiento web <span class="grad">WordPress</span> <span class="light"> para que tu sitio nunca falle</span></h1>
+        <h1 class="dark">Mantenimiento web WordPress<span class="light"> para que tu sitio nunca falle</span></h1>
         <p class="lead">Nos encargamos de la seguridad, velocidad y estabilidad de tu sitio web. Evita caídas, hackeos y pérdida de posicionamiento en Google. Tu web funcionando 24/7 sin que tengas que preocuparte por nada.</p>
         <div class="cta-container">
             <a href="<?= URL_PATH ?>contacto" class="secondary-action">Hablar con un especialista</a>

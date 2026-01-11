@@ -331,6 +331,9 @@ h1, h2, h3, h4, h5, h6{
         font-family: $headings-font-family-playfair;
         font-weight: $font-weight-italic;
         font-style: italic;
+        &.green{
+            color: $primary-500;
+        }
     }
 }
 b, strong {
@@ -990,114 +993,7 @@ section.faq{
     }
 }
 
-// Animaciones gradiente
-@keyframes moveInCircle {
-  0% { transform: rotate(0deg); }
-  50% { transform: rotate(180deg); }
-  100% { transform: rotate(360deg); }
-}
 
-@keyframes moveVertical {
-  0% { transform: translateY(-50%); }
-  50% { transform: translateY(50%); }
-  100% { transform: translateY(-50%); }
-}
-
-@keyframes moveHorizontal {
-  0% { transform: translateX(-50%) translateY(-10%); }
-  50% { transform: translateX(50%) translateY(10%); }
-  100% { transform: translateX(-50%) translateY(-10%); }
-}
-
-.gradient-bg {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
-  top: 0;
-  left: 0;
-
-  svg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-  }
-
-  .gradients-container {
-    filter: url(#goo) blur(60px);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-  }
-
-  .g1 {
-    position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;
-    mix-blend-mode: var(--blending);
-    width: var(--circle-size);
-    height: var(--circle-size);
-    top: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
-    transform-origin: center center;
-    animation: moveVertical 30s ease infinite;
-    opacity: 1;
-  }
-
-  .g2 {
-    position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
-    mix-blend-mode: var(--blending);
-    width: var(--circle-size);
-    height: var(--circle-size);
-    top: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
-    transform-origin: calc(50% - 400px);
-    animation: moveInCircle 20s reverse infinite;
-    opacity: 1;
-  }
-
-  .g3 {
-    position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
-    mix-blend-mode: var(--blending);
-    width: var(--circle-size);
-    height: var(--circle-size);
-    top: calc(50% - var(--circle-size) / 2 + 200px);
-    left: calc(50% - var(--circle-size) / 2 - 500px);
-    transform-origin: calc(50% + 400px);
-    animation: moveInCircle 40s linear infinite;
-    opacity: 1;
-  }
-
-  .g4 {
-    position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
-    mix-blend-mode: var(--blending);
-    width: var(--circle-size);
-    height: var(--circle-size);
-    top: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
-    transform-origin: calc(50% - 200px);
-    animation: moveHorizontal 40s ease infinite;
-    opacity: 0.7;
-  }
-
-  .g5 {
-    position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
-    mix-blend-mode: var(--blending);
-    width: calc(var(--circle-size) * 2);
-    height: calc(var(--circle-size) * 2);
-    top: calc(50% - var(--circle-size));
-    left: calc(50% - var(--circle-size));
-    transform-origin: calc(50% - 800px) calc(50% + 200px);
-    animation: moveInCircle 20s ease infinite;
-    opacity: 1;
-  }
-}
 
 // Marcas
 .slider-brands{
@@ -1311,7 +1207,53 @@ section.faq{
         }
     }
 }
+// ========== CONTACTO PAGE ==========
 
+.contact{
+    background-color: $surface-sub;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    padding: $space-300;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    align-items: center;
+    .back-logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(8%, 24%);
+        z-index: 1;
+    }
+    .card-data{
+        svg{
+            width: 32px;
+            height: 32px;
+        }
+        h3{
+            font-size: clamp(1.5rem, 1.3rem + 0.8vw, 2rem);
+        }
+    }
+    .contact-form{
+        background-color: $surface-page-dark;
+        border-radius: $scale-300;
+        padding: 80px;
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 100%;
+    }
+    form{
+        h1{
+            font-size: clamp(2rem, 1.7rem + 1.2vw, 2.75rem);
+        }
+        p, label{
+            color: $color-body-dark;
+        }
+
+    }
+}
 
 // ========== BANNER CONTACTO ==========
 
