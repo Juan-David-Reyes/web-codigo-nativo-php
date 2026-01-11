@@ -39,8 +39,11 @@ Options +FollowSymLinks
     # RewriteCond %{HTTP_HOST} !^www\.
     # RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
     
-    # Excluir carpeta /blog del router PHP (para WordPress)
-    RewriteCond %{REQUEST_URI} !^/blog/
+    # Excluir archivos estáticos del router PHP
+    RewriteCond %{REQUEST_URI} ^/assets/ [OR]
+    RewriteCond %{REQUEST_URI} ^/blog/ [OR]
+    RewriteCond %{REQUEST_URI} \.(css|js|jpg|jpeg|png|gif|svg|webp|ico|woff|woff2|ttf|eot)$ [NC]
+    RewriteRule ^ - [L]
     
     # Si el archivo o directorio existe, no reescribir
     RewriteCond %{REQUEST_FILENAME} -f [OR]
