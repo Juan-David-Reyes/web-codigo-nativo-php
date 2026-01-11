@@ -1184,6 +1184,9 @@ section.faq{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 40px;
+        &.div2{
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
     h2{
         text-align: left;
@@ -1217,12 +1220,79 @@ section.faq{
 
 .service-mant-negocio{
     background-color: $surface-default;
+    padding: 120px $space-200;
+    box-sizing: border-box;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 40px;
+        align-items: center;
+    }
+    h2{
+        font-size: clamp(2rem, 1.7rem + 1.2vw, 2.75rem);
+    }
+
+
 }
 .service-mant-process{
     background-color: $surface-default;
+    padding: 120px $space-200;
+    box-sizing: border-box;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+        align-items: flex-start;
+    }
+    h2{
+        font-size: clamp(2rem, 1.7rem + 1.2vw, 2.75rem);
+    }
+    .features-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        h3{
+            font-size: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+        }
+    }
 }
 .service-mant-hub{
     background-color: $surface-page-dark;
+    padding: 120px $space-200;
+    box-sizing: border-box;
+    h2{
+        text-align: center;
+        font-size: clamp(2rem, 1.7rem + 1.2vw, 2.75rem);
+        &span{
+            font-size: clamp(2rem, 1.7rem + 1.2vw, 2.75rem);
+        }
+    }
+    .intro-text{
+        margin: 0 auto $space-400;
+        max-width: 816px;
+        p{
+            color: $color-body-dark;
+            text-align: center;
+        }
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        th, td{
+            padding: $space-200;
+            text-align: left;
+            border-bottom: 1px solid $neutral-800;
+            @include body(sm);
+            color: $color-body-dark;
+        }
+        th{
+            background-color: $neutral-800;
+            color: $color-headings-dark;
+            font-weight: $font-weight-semibold;
+        }
+    }
+
+
 }
 // ========== CONTACTO PAGE ==========
 

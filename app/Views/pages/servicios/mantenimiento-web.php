@@ -119,7 +119,7 @@
             <h2>Así trabajamos el <span class="light">mantenimiento de tu sitio</span></h2>
         </div>
         <div class="features">
-            <div class="features-grid div2">
+            <div class="features-grid">
                 <div class="feature-card">
                     <div class="title-caption">
                         01.
@@ -156,10 +156,114 @@
 <section class="service-mant-hub">
     <div class="container">
         <div class="intro-text">
-            <h2 class="dark">Dashboard de seguimiento<span class="light">transparencia total del servicio</span></h2>
+            <h2 class="dark">Dashboard de seguimiento <span class="light green">transparencia</span> <span class="light">total del servicio</span></h2>
             <p>Sabemos que muchos clientes pagan mantenimiento sin saber realmente qué se está haciendo. Por eso incluimos un dashboard donde podrás ver el historial de cambios y el estado de tu sitio web en tiempo real.</p>
         </div>
-        
+        <picture>
+            <img width="640" height="360" src="" alt="">
+        </picture>
+        <div class="hub-features">
+            <h2 class="dark">Lo que podrás ver en tu <span class="light">HUB de mantenimiento web</span></h2>
+            <ul>
+                <li>
+                    <img width="48" height="48" src="" alt="">Actualizaciones realizadas
+                </li>
+
+                <li>
+                    <img width="48" height="48" src="" alt="">Estado de plugins y temas
+                </li>
+                <li>
+                    <img width="48" height="48" src="" alt="">Registro de incidencias y soluciones
+                </li>
+                <li>
+                    <img width="48" height="48" src="" alt="">Copias de seguridad disponibles</
+                    li>
+                <li>
+                    <img width="48" height="48" src="" alt="">Monitoreo básico de seguridad</
+                    li>
+                <li>
+                    <img width="48" height="48" src="" alt="">Tareas ejecutadas y tiempo de
+                     soporte</li>
+        </div>
+        <div class="planes">
+            <h2 class="dark">Nuestros planes de <span class="light">mantenimiento web wordpress</span></h2>
+            <p>Con nosotros, no te quedas solo después de que lanzamos tu página web. Ofrecemos soporte técnico gratuito por 6 meses, lo que incluye:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Básico</th>
+                        <th>Intermedio</th>
+                        <th>Avanzado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Actualización de WordPress, plugins y tema</td>
+                        <td>Mensual</td>
+                        <td>Quincenal</td>
+                        <td>Semanal</td>
+                    </tr>
+                    <tr>
+                        <td>Copias de seguridad (Backups)</td>
+                        <td>Mensual</td>
+                        <td>Dos veces / semana</td>
+                        <td>Diario</td>
+                    </tr>
+                    <tr>
+                        <td>Revisión de seguridad</td>
+                        <td>Básica</td>
+                        <td>Media</td>
+                        <td>Avanzada</td>
+                    </tr>
+                    <tr>
+                        <td>Monitoreo de funcionamiento general</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Soporte incluido</td>
+                        <td>Hasta 1 hora</td>
+                        <td>Hasta 2 hora</td>
+                        <td>Hasta 4 hora</td>
+                    </tr>
+                    <tr>
+                        <td>Optimización de velocidad (limpieza de base de datos)</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Ajustes visuales (cambios de texto o imágenes)</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Revisión SEO On page</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Informe mensual</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>PRECIO</td>
+                        <td>70 USD / mes</td>
+                        <td>120 USD / mes</td>
+                        <td>180 USD / Mes</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+
     </div>
 </section>
 
